@@ -1,0 +1,108 @@
+.clr-palki{
+    color: #cd3131;
+}
+
+.bg-palki{
+    background-color: #cd3131;
+}
+
+.bold-7{
+    font-weight: 700;
+}
+.bold-9{
+    font-weight: 900;
+}
+
+.wrapper-bg{
+    background-color: #fff8f6;
+}
+
+.box-shadow{
+    box-shadow: 0px 1px 9px #525252;
+}
+
+.banner-text-area{
+    margin: 40px 0px;
+}
+
+.banner-text-area p{
+    font-size: 19px;
+    max-width: 700px;
+    margin: 0 auto 11px;
+    font-weight: 700;
+    color: #44566c;
+}
+
+.button-style{
+    padding: 13px 20px;
+    border-radius: 30px;
+    margin-left: 30px;
+    color: #fff;
+}
+
+.Nunito{
+    font-family: Nunito, sans-serif;
+}
+
+.span-text span{
+    color: #cd3131;
+    background-color: #f5dede;
+    padding: 12px 30px;
+    font-size:18px;
+}
+
+.banner-title{
+    font-size: 52px;
+    font-weight:900;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dish-card-wrapper{
+    border-radius: 10px;
+}
+
+.dish-card-wrapper img{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.dish-info h4{
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 80px;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dish-info span{
+    color:#cd3131;
+    position:absolute;
+    right:0;
+}
+
+.footer-title{
+    position: relative;
+    font-weight: 800;
+    font-size: 22px;
+    padding: 0 0 5px;
+    margin: 0 0 30px;
+    font-family: sans-serif;
+    color: #cd3131;
+    display: inline-block;
+}
+.footer-title:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 80%;
+    background: #cd3131;
+    bottom: 0;
+}
+.fa-star{
+    color: #f7a032;
+}
+
+.pt-8{
+    padding-top:80px;
+}

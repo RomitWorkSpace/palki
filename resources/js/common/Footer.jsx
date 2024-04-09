@@ -58,14 +58,14 @@ UP - 201308 <br/><br/>
 
       </div>
     </div>
-<hr className='clr-black'/>
-    <div className="container mt-4">
-      <div className="copyright clr-black">
-        &copy; Copyright <strong><span className='primary-clr'>LTS</span></strong>. All Rights Reserved
-      </div>
-      <div className="credits clr-black">
 
-        Designed by <a href="https://livetechservices.in" className="primary-clr">LTS</a>
+    <div className="container-fluid mt-4 bg-palki footer-copyright p-3">
+      <div className="copyright clr-white">
+        &copy; Copyright <strong><span className=''>LTS</span></strong>. All Rights Reserved
+      </div>
+      <div className="credits clr-white">
+
+        Designed by <a href="https://livetechservices.in" className="">LTS</a>
       </div>
     </div>
 

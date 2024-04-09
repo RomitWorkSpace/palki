@@ -5,6 +5,9 @@
 .bg-palki{
     background-color: #cd3131;
 }
+.clr-white{
+    color:#fff;
+}
 
 .bold-7{
     font-weight: 700;
@@ -105,4 +108,132 @@
 
 .pt-8{
     padding-top:80px;
+}
+
+.service-card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+    padding: 40px 20px 30px;
+    text-align:center;
+}
+
+.service-img{
+    height:88px;
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+.service-img img{
+    width: 80px;
+    height: 80px;
+}
+
+.service-info h4{
+    position:relative;
+    font-family: sans-serif;
+    font-size:18px;
+    padding-bottom: 10px;
+    font-weight:700;
+    color: #212529;
+}
+
+.service-info h4:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    background: #cd3131;
+    width: 50%;
+    height: 2px;
+    border-radius: 20px;
+}
+
+.service-info p{
+    color: #44566c;
+    font-family: Nunito;
+    font-size:16px;
+}
+
+.home-contact-bg{
+    box-shadow:0 0 20px rgb(0 0 0 / 8%);
+}
+
+.text-justify{
+    text-align: justify;
+}
+.story-list li{
+    list-style: none;
+    position: relative;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 8%);
+    margin: 20px 0 0;
+    border-radius: 3px;
+    color: #cd3131;
+    font-weight: 600;
+}
+
+.footer-copyright{
+    position: relative;
+}
+
+.copyright::before {
+    content: "";
+    position: absolute;
+    background-image: url(/shapee.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 10px;
+    left: 0;
+    right: 0;
+    top: -8px;
+}
+
+.catalog-cover span{
+    width:100px;
+    height: 100px;
+}
+.catalog-cover span img{
+    border-radius: 8px;
+}
+
+.food-title h4{
+    font-size: 22px;
+    font-weight:600;
+    font-family: Nunito;
+}
+.food-info{
+    width: calc(100% - 80px);
+    padding-left: 20px;
+}
+
+.food-title{
+    position: relative;
+}
+
+.food-title span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color:#cd3131;
+    font-weight: 600;
+}
+
+.team-wrapper img{
+    border-radius: 6px;
+}
+.team-identity{
+    background-color: #cd3131;
+    padding: 0 15px;
+    text-align: center;
+    border-radius: 20px;
+    color:#fff;
+}
+.team-info h5{
+    font-family: Nunito;
+    text-align: center;
+    font-weight: 600;
 }

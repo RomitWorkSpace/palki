@@ -69,7 +69,7 @@ const Header = () => {
   return (
     <>
     <header className='header_area'>
-    <div id="header" className={'header d-flex align-items-center fixed-top wrapper-bg'}>
+    <div id="header" className={'header d-flex align-items-center fixed-top wrapper-bg box-shadow'}>
     <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <Link to="/" className="logo d-flex align-items-center">
@@ -83,7 +83,7 @@ const Header = () => {
         <ul>
           <li onClick={() => handleNav()}><Link to="/" className="active">Home</Link></li>
           <li onClick={() => handleNav()}><Link to="/about">About</Link></li>
-          <li className="dropdown" onClick={() => toggleRoomDropdown()}><Link to="" id="down" className={dropdown2Visible ? 'active' : 'deactive'}><span>Menu</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+          <li className="dropdown" onClick={() => toggleRoomDropdown()}><Link to="" id="down" className={dropdown2Visible ? 'active' : 'deactive'}><span>Services</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul id="inner-down" className={dropdown2Visible ? 'dropdown-active' : 'dropdown-deactive'}>
                     
                         {roomData.map((room) => (

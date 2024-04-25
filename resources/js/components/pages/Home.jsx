@@ -2,11 +2,12 @@ import React from 'react'
 import HeroSection from '../HomeComponents/HeroSection'
 import DishSection from '../HomeComponents/DishSection'
 import ServiceSection from '../HomeComponents/ServiceSection'
-import ContactSection from '../HomeComponents/ContactSection'
+import BookingSection from '../HomeComponents/BookingSection'
 import StorySection from '../HomeComponents/StorySection'
 import PopularFood from '../HomeComponents/PopularFood'
 import TeamSection from '../HomeComponents/TeamSection'
 import BlogSection from '../HomeComponents/BlogSection'
+import TestimonialSection from '../HomeComponents/TestimonialSection'
 
 function Home() {
     return (
@@ -14,9 +15,9 @@ function Home() {
         <HeroSection />
         <DishSection />
         <ServiceSection />
-        <ContactSection />
+        <BookingSection />
         <StorySection />
-        <PopularFood />
+        <TestimonialSection />
         <TeamSection />
         <BlogSection />
         </>

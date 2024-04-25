@@ -15,7 +15,7 @@ const Header = () => {
 
     const fetchData = async () => {
       try {
-        const response = await fetch('https://palki.com/api/services');
+        const response = await fetch('https://filmcityinfo.com/api/services');
         const data = await response.json();
         setDropdownData(data.services);
       } catch (error) {
@@ -30,7 +30,7 @@ const Header = () => {
 
     const fetchRoomData = async () => {
       try {
-        const response = await fetch('https://palki.com/api/rooms');
+        const response = await fetch('https://filmcityinfo.com/api/rooms');
         const data = await response.json();
         setRoomData(data.rooms);
       } catch (error) {
@@ -88,7 +88,7 @@ const Header = () => {
                     
                         {roomData.map((room) => (
                           
-                          <li><Link to={`/rooms/${room.slug}`}>{room.name}</Link></li>
+                          <li onClick={() => handleNav()}><Link to={`/rooms/${room.slug}`}>{room.name}</Link></li>
                         ))}
 
             </ul>
@@ -99,15 +99,15 @@ const Header = () => {
      
                         {dropdownData.map((dropdown) => (
                           
-                          <li><Link to={`/facilities/${dropdown.slug}`}>{dropdown.name}</Link></li>
+                          <li onClick={() => handleNav()}><Link to={`/facilities/${dropdown.slug}`}>{dropdown.name}</Link></li>
                         ))}
 
             </ul>
           </li>
 
-          <li><Link to="/blog">Blog</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="" className="get-a-quote bg-palki" href="">Get Free Quote</Link></li>
+          <li onClick={() => handleNav()}><Link to="/blog">Blog</Link></li>
+          <li onClick={() => handleNav()}><Link to="/contact">Contact</Link></li>
+          <li onClick={() => handleNav()}><Link to="/share-query" className="get-a-quote bg-palki">Get Free Quote</Link></li>
         </ul>
       </nav>
 

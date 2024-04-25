@@ -15,10 +15,10 @@ function Footer() {
           </a>
           <p className='clr-black'>We eagerly await the opportunity to collaborate with clients, leveraging our expertise and advanced capabilities to meet their unique manufacturing requirements.</p>
           <div className="social-links d-flex mt-4">
-            <a href="#" className="twitter"><i className="bi bi-twitter clr-black"></i></a>
-            <a href="#" className="facebook"><i className="bi bi-facebook clr-black"></i></a>
-            <a href="#" className="instagram"><i className="bi bi-instagram clr-black"></i></a>
-            <a href="#" className="linkedin"><i className="bi bi-linkedin clr-black"></i></a>
+            <a href="#" className="twitter"><i className="bi bi-twitter clr-palki"></i></a>
+            <a href="#" className="facebook"><i className="bi bi-facebook clr-palki"></i></a>
+            <a href="#" className="instagram"><i className="bi bi-instagram clr-palki"></i></a>
+            <a href="#" className="linkedin"><i className="bi bi-linkedin clr-palki"></i></a>
           </div>
         </div>
 
@@ -51,7 +51,7 @@ function Footer() {
 Greater Noida, Gautam Budh Nagar,
 UP - 201308 <br/><br/>
             <strong>Phone:</strong> +91-8178126122<br/>
-            <strong>Email:</strong> admin@npia.in<br/>
+            <strong>Email:</strong> admin@palki.in<br/>
           </p>
 
         </div>

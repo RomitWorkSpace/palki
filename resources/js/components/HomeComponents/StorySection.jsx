@@ -11,9 +11,9 @@ function StorySection() {
                     </div>
                     <div className='col-md-6'>
                         <h4 className='clr-palki bold-7'>Our Story</h4>
-                        <h2 className='bold-9'>Trusted By 200 + Satisfied Clients</h2>
+                        <h2 className='bold-9'>Trusted By 20 + Satisfied Clients</h2>
                         <div className='content-area text-justify p-2'>
-                            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore eit esdioilore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullaemco laboeeiris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor iesdein reprehendeerit in voluptate velit esse cillum dolore.</p>
+                            <p>Welcome to Palki Food Services, your premier provider of catering solutions for various industries including corporate, industrial, and MNCs. With a track record of innovation and problem-solving, we pride ourselves on delivering top-notch services tailored to our clients' needs across different sectors and regions.</p>
 
                             <ul className='story-list'>
                                 <li>Fresh and Fast food Delivery</li>

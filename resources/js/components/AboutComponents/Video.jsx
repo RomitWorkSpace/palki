@@ -24,29 +24,29 @@ function Video() {
                             <div className='col-md-3 mb-4'>
                                 <div className='counter-inner'>
                                     <img src={CounterImg} alt="counter" width="100%" />
-                                    <h4 className=''>786</h4>
-                                    <p>Happy Customer</p>
+                                    <h4 className=''>12,000+</h4>
+                                    <p>Pax Family Day</p>
                                 </div>
                             </div>
                             <div className='col-md-3 mb-4'>
                                 <div className='counter-inner'>
                                     <img src={CounterImg} alt="counter" width="100%" />
-                                    <h4 className=''>109</h4>
-                                    <p>Expert Chefs</p>
+                                    <h4 className=''>6,000+</h4>
+                                    <p>Pax Diwali Mela</p>
                                 </div>
                             </div>
                             <div className='col-md-3 mb-4'>
                                 <div className='counter-inner'>
                                     <img src={CounterImg} alt="counter" width="100%" />
-                                    <h4 className=''>23</h4>
-                                    <p>Years of Experience</p>
+                                    <h4 className=''>3,000+</h4>
+                                    <p>Musical Concert</p>
                                 </div>
                             </div>
                             <div className='col-md-3 mb-4'>
                                 <div className='counter-inner'>
                                     <img src={CounterImg} alt="counter" width="100%" />
-                                    <h4 className=''>786</h4>
-                                    <p>Happy Customer</p>
+                                    <h4 className=''>1,200+</h4>
+                                    <p>Holi Party</p>
                                 </div>
                             </div>
                         </div>

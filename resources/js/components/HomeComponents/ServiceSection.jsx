@@ -1,5 +1,6 @@
 import React from 'react'
 import ServiceCard from './ServiceCard'
+import { Link } from 'react-router-dom'
 
 function ServiceSection() {
     return (
@@ -21,6 +22,11 @@ function ServiceSection() {
                     <div className='col-md-3 mb-4'>
                         <ServiceCard />
                     </div>
+                </div>
+                <div className='text-center'>
+                    <Link to="/services">
+                        <button className='btn-palki'>View all Services</button>
+                    </Link>
                 </div>
             </div>
         </div>

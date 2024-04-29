@@ -9,11 +9,11 @@ function Footer() {
 
     <div className="container">
       <div className="row gy-4">
-        <div className="col-lg-3 col-md-12 footer-info">
+        <div className="col-lg-4 col-md-12 footer-info">
           <a href="index.html" className="logo d-flex align-items-center">
             <img src={Logo} alt="tecroost" height="180" />
           </a>
-          <p className='clr-black'>We eagerly await the opportunity to collaborate with clients, leveraging our expertise and advanced capabilities to meet their unique manufacturing requirements.</p>
+          <p className='clr-black text-justify'>Palki Food Services is providing Catering services to employees on daily basis in different industries, Palki Food Services offers multitude of outsourced services for its clients across sectors and geographical areas.</p>
           <div className="social-links d-flex mt-4">
             <a href="#" className="twitter"><i className="bi bi-twitter clr-palki"></i></a>
             <a href="#" className="facebook"><i className="bi bi-facebook clr-palki"></i></a>
@@ -22,25 +22,25 @@ function Footer() {
           </div>
         </div>
 
-        <div className="col-lg-3 col-6 footer-links">
+        <div className="col-lg-2 col-6 footer-links">
           <h4 className="footer-title">Useful Links</h4>
           <ul className='footer-link'>
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
-            <li><a href="#">Our Resources</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
           </ul>
         </div>
 
         <div className="col-lg-3 col-6 footer-links">
-          <h4 className="footer-title">Our Products</h4>
+          <h4 className="footer-title">Our Services</h4>
           <ul className='footer-link'>
-            <li><a href="#">Plastic Parts</a></li>
-            <li><a href="#">Magnesium Parts</a></li>
-            <li><a href="#">Metal Body</a></li>
-            <li><a href="#">Camera Cases</a></li>
-            <li><a href="#">Smartwatch Cases</a></li>
+            <li><a href="#">Industrial Cafeteria Meals</a></li>
+            <li><a href="#">Corporate Cafeteria Meals</a></li>
+            <li><a href="#">Bulk Bakery Supplies</a></li>
+            <li><a href="#">Corporate Supplies</a></li>
+            <li><a href="#">Event Catering</a></li>
           </ul>
         </div>
 
@@ -61,7 +61,7 @@ UP - 201308 <br/><br/>
 
     <div className="container-fluid mt-4 bg-palki footer-copyright p-3">
       <div className="copyright clr-white">
-        &copy; Copyright <strong><span className=''>LTS</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span className=''>Palki Foods</span></strong>. All Rights Reserved
       </div>
       <div className="credits clr-white">
 

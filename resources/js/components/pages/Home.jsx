@@ -8,16 +8,17 @@ import PopularFood from '../HomeComponents/PopularFood'
 import TeamSection from '../HomeComponents/TeamSection'
 import BlogSection from '../HomeComponents/BlogSection'
 import TestimonialSection from '../HomeComponents/TestimonialSection'
+import ClientSection from '../HomeComponents/ClientSection'
 
 function Home() {
     return (
         <>
         <HeroSection />
-        <DishSection />
+        <StorySection />
         <ServiceSection />
         <BookingSection />
-        <StorySection />
         <TestimonialSection />
+        <ClientSection />
         <TeamSection />
         <BlogSection />
         </>

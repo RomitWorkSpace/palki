@@ -30,7 +30,7 @@ function BookingSection() {
             <div className='container pt-5'>
                 <form onSubmit={handleSubmit(handleForm)}>
                     <div className='row'>
-                        <div className='col-md-4 mb-5'>
+                        <div className='col-md-4 mb-4'>
                             <div className='form-group'>
                                 <label htmlFor="name">Name</label>
                                 <input type="text" 
@@ -47,7 +47,7 @@ function BookingSection() {
                                 )}
                             </div>
                         </div>
-                        <div className='col-md-4 mb-5'>
+                        <div className='col-md-4 mb-4'>
                             <div className='form-group'>
                                 <label htmlFor="phone">Phone Number</label>
                                 <input type="number" 
@@ -64,7 +64,7 @@ function BookingSection() {
                                 )}
                             </div>
                         </div>
-                        <div className='col-md-4 mb-5'>
+                        <div className='col-md-4 mb-4'>
                             <div className='form-group'>
                                 <label htmlFor="email">Email</label>
                                 <input type="email" 
@@ -80,7 +80,7 @@ function BookingSection() {
                                 )}
                             </div>
                         </div>
-                        <div className='col-md-4 mb-5'>
+                        <div className='col-md-4 mb-4'>
                             <div className='form-group'>
                             <label htmlFor="event">Query</label>
                                 <select name="query" id="" className='form-control' {...register("query",{
@@ -99,7 +99,7 @@ function BookingSection() {
                                 )}
                             </div>
                         </div>
-                        <div className='col-md-4 mb-5'>
+                        <div className='col-md-4 mb-4'>
                             <div className='form-group'>
                             <label htmlFor="person">Person</label>
                                 <select name="person" id="" className='form-control' {...register("person",{
@@ -118,7 +118,7 @@ function BookingSection() {
                             </div>
                         </div>
                         
-                        <div className='col-md-4 mb-5 text-center'>
+                        <div className='col-md-4 mb-4 text-center'>
                            <button type="submit" className='btn-palki'>Submit</button>
                         </div>
                         

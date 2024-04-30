@@ -9,7 +9,7 @@ function VisionSection() {
         <div className='container-fluid pt-5 pb-5 wrapper-bg'>
             <div className='container pt-4 pb-4'>
                 <div className='row'>
-                    <div className='col-md-4'>
+                    <div className='col-md-4 mb-4'>
                         <div className='vision-bg box-shadow'>
                             <img src={ Vision } alt="vision" width="100%" />
                             <div className='text-center p-3 bg-white height-180'>
@@ -18,7 +18,7 @@ function VisionSection() {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-4'>
+                    <div className='col-md-4 mb-4'>
                         <div className='vision-bg'>
                             <img src={ Mission } alt="vision" width="100%" />
                             <div className='text-center p-3 bg-white height-180 box-shadow'>
@@ -27,7 +27,7 @@ function VisionSection() {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-4'>
+                    <div className='col-md-4 mb-4'>
                         <div className='vision-bg'>
                             <img src={ Goal } alt="vision" width="100%" />
                             <div className='text-center p-3 bg-white height-180 box-shadow'>

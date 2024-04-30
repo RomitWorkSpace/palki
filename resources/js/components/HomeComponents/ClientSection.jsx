@@ -1,4 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import Ienergizer from 'imgPath/images/ienergier.png'
 import Samsung from 'imgPath/images/samsung.png'
 import Barco from 'imgPath/images/barco.jpg'
@@ -13,12 +16,16 @@ import IndiaTv from 'imgPath/images/India-TV.jpg'
 import Sunwodr from 'imgPath/images/sunwodr.jpg'
 
 function ClientSection() {
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
     return (
         <>
-        <div className='container-fluid pt-8 pb-5'>
+        <div className='container-fluid pt-8'>
             <h4 className='text-center clr-palki bold-7'>Esteemed Clients</h4>
             <h2 className='text-center bold-9'>Delivering Food for leading brands</h2>
-            <div className='container pt-5'>
+            <div className='container pt-4' data-aos="fade-up">
                 <div className='row align-items-center'>
                     <div className='col-md-2 col-6 mb-4'>
                         <div className='client-bg'>

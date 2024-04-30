@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function BlogSection() {
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
     return (
         <>
         <div className='container-fluid pt-8 pb-5'>
@@ -10,7 +16,7 @@ function BlogSection() {
             <div className='container pt-5'>
                 <div className='row'>
                     <div className='col-md-4 mb-4'>
-                        <div className='inner-blog-wrapper'>
+                        <div className='inner-blog-wrapper' data-aos="fade-up">
                             <img src="https://kamleshyadav.com/html/catering/html/assets/images/main/dish/01.jpg" alt="blog" width="100%" />
                             <div className='blog-date'><span style={{fontSize:'23px'}}>16</span><br/>sep</div>
                             <div className='blog-info'>
@@ -19,7 +25,7 @@ function BlogSection() {
                         </div>
                     </div>
                     <div className='col-md-4 mb-4'>
-                        <div className='inner-blog-wrapper'>
+                        <div className='inner-blog-wrapper' data-aos="fade-up">
                             <img src="https://kamleshyadav.com/html/catering/html/assets/images/main/dish/01.jpg" alt="blog" width="100%" />
                             <div className='blog-date'><span style={{fontSize:'23px'}}>16</span><br/>sep</div>
                             <div className='blog-info'>
@@ -28,7 +34,7 @@ function BlogSection() {
                         </div>
                     </div>
                     <div className='col-md-4 mb-4'>
-                        <div className='inner-blog-wrapper'>
+                        <div className='inner-blog-wrapper' data-aos="fade-up">
                             <img src="https://kamleshyadav.com/html/catering/html/assets/images/main/dish/01.jpg" alt="blog" width="100%" />
                             <div className='blog-date'><span style={{fontSize:'23px'}}>16</span><br/>sep</div>
                             <div className='blog-info'>

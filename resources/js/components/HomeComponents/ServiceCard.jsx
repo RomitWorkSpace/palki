@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom'
 
-function ServiceCard() {
+function ServiceCard({props}) {
+
+    useEffect(() => {
+        AOS.init();
+      }, []);
     return (
         <>
-        <div className='service-card'>
+        <div className='service-card' data-aos="fade-up">
             <div className='service-img'>
-                <img src="https://kamleshyadav.com/html/catering/html/assets/images/main/service/wedding.svg" alt="" />
+                <img src={props.icon} alt="" />
             </div>
             <div className='service-info'>
-                <h4 className=''>Wedding Services</h4>
+                <h4 className=''>{props.name}</h4>
                 <p className='mt-4'>Contrary to popular belief, ipsum is not simply random.</p>
 
                 <Link to=""><h5 style={{color:'#212529', fontFamily:'Nunito', fontSize:'17px'}}>Read More</h5></Link>

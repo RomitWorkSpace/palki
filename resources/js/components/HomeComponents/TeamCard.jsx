@@ -1,15 +1,15 @@
 import React from 'react'
 
-function TeamCard() {
+function TeamCard({props}) {
     return (
         <>
-            <div className='team-wrapper'>
-                <img src="https://kamleshyadav.com/html/catering/html/assets/images/main/team/01.jpg" alt="chef" width="100%" />
-                <div className='team-identity'>
-                    <h6>Decoration Chef</h6>
-                </div>
+            <div className='team-wrapper wrapper-bg text-center p-3'>
+                <img src={ props.image } alt="Director" width="100%" />
+                
                 <div className='team-info'>
-                    <h5 className=''>Jenny Disusa</h5>
+                    <h5 className='mt-3'>{props.name}</h5>
+                    <p className='clr-palki'>{props.designation}</p>
+                    <p>{props.intro}</p>
                 </div>
             </div>
         </>

@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function StorySection() {
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
     return (
         <>
         <div className='container-fluid pt-5 pb-5'>
-            <div className='container'>
+            <div className='container' data-aos="fade-up">
                 <div className='row'>
                     <div className='col-md-6'>
                         <img src="https://kamleshyadav.com/html/catering/html/assets/images/main/story.png" alt="food" width="100%" />

@@ -1,4 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import axios from 'axios';
+
 import ContactBg from 'imgPath/booking-bg.jpg'
 import Iframe from 'react-iframe'
 import PageBanner from '../../common/PageBanner'
@@ -6,6 +9,23 @@ import mbanner from 'imgPath/banners/Contact-banner-mb.jpg'
 import dbanner from 'imgPath/banners/Contact-banner.jpg'
 
 function Contact() {
+
+    const {
+        register,
+        handleSubmit,
+        reset,
+        formState: { errors },
+    } = useForm();
+    const [formstatus, setFormStatus] = useState(null);
+
+    const handleForm = async (formData) => {
+        console.log(formData);
+        const response = await axios.post('/api/contact-form', formData);
+        if (response.status === 200){
+            setFormStatus('Form submit successfully');
+            reset();
+        }
+    }
 
     const Banners = {mobile_banner : mbanner, desktop_banner : dbanner}
     return (
@@ -17,22 +37,77 @@ function Contact() {
                     <div className='col-md-2'></div>
                     <div className='col-md-8 contact-inner'>
                         <div className='contact-form'>
-                            <form>
+                            <form onSubmit={handleSubmit(handleForm)}>
                                 <div className='row'>
                                     <div className='col-md-6 mb-4'>
-                                        <input type="text" name="name" className='form-control' placeholder="Enter your name" />
+                                        <input type="text" 
+                                        name="name" 
+                                        className='form-control' 
+                                        placeholder="Enter your name" 
+                                        {...register("name",{
+                                            required: true
+                                        })}
+                                        />
+
+                                        {errors.name?.type === "required" && (
+                                            <small className='clr-red'>* This field is required</small>
+                                        )}
                                     </div>
                                     <div className='col-md-6 mb-4'>
-                                        <input type="email" name="email" className='form-control' placeholder="Enter your email" />
+                                        <input type="email" 
+                                        name="email" 
+                                        className='form-control' 
+                                        placeholder="Enter your email" 
+                                        {...register("email",{
+                                            required: true
+                                        })}
+                                        />
+
+                                        {errors.email?.type === "required" && (
+                                            <small className='clr-red'>* This field is required</small>
+                                        )}
                                     </div>
                                     <div className='col-md-6 mb-4'>
-                                        <input type="number" name="phone" className='form-control' placeholder="Enter your Number" />
+                                        <input type="number" 
+                                        name="phone" 
+                                        className='form-control' 
+                                        placeholder="Enter your Number" 
+                                        {...register("phone",{
+                                            required: true
+                                        })}
+                                        />
+
+                                        {errors.phone?.type === "required" && (
+                                            <small className='clr-red'>* This field is required</small>
+                                        )}
                                     </div>
                                     <div className='col-md-6 mb-4'>
-                                        <input type="text" name="subject" className='form-control' placeholder="Enter your subject" />
+                                        <input type="text" 
+                                        name="subject" 
+                                        className='form-control' 
+                                        placeholder="Enter your subject" 
+                                        {...register("subject",{
+                                            required: true
+                                        })}
+                                        />
+
+                                        {errors.subject?.type === "required" && (
+                                            <small className='clr-red'>* This field is required</small>
+                                        )}
                                     </div>
                                     <div className='col-12 mb-4'>
-                                        <textarea name="message" id="message" rows="5" className='form-control' placeholder="Your message..."></textarea>
+                                        <textarea name="message" 
+                                        id="message" rows="5" 
+                                        className='form-control' 
+                                        placeholder="Your message..."
+                                        {...register("message",{
+                                            required: true
+                                        })}
+                                        ></textarea>
+
+                                        {errors.message?.type === "required" && (
+                                            <small className='clr-red'>* This field is required</small>
+                                        )}
                                     </div>
                                 </div>
                                 <button type="submit" className='btn-palki'>Submit</button>
@@ -54,7 +129,7 @@ function Contact() {
                             </div>
                             <div className='contact-info text-center'>
                                 <h4 className='bold-7'>Call Us</h4>
-                                <p>+ 1800-1245-1245</p>
+                                <p>+91-8860619770 / 71</p>
                             </div>
                         </div>
                     </div>
@@ -65,7 +140,7 @@ function Contact() {
                             </div>
                             <div className='contact-info text-center'>
                                 <h4 className='bold-7'>Mail Us</h4>
-                                <p>info@palkifoods.com</p>
+                                <p>info@palkifoods.co.in</p>
                             </div>
                         </div>
                     </div>
@@ -76,7 +151,7 @@ function Contact() {
                             </div>
                             <div className='contact-info text-center'>
                                 <h4 className='bold-7'>Location</h4>
-                                <p>Plot No. 6, Sector 21, Greater Noida</p>
+                                <p>Udhyog Kendra1 Ecotech3, Extension, Noida</p>
                             </div>
                         </div>
                     </div>

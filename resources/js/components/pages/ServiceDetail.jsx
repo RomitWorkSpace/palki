@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import GallerySection from '../HomeComponents/GallerySection'
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import PageBanner from '../../common/PageBanner';
 
 function ServiceDetail() {
 
@@ -14,14 +15,10 @@ function ServiceDetail() {
             setSubServiceData(res.data.subservice);
         })
     },[slug]);
+    const Banner = {mobile_banner: `/public/images/banners/${subserviceData.mobile_banner}`, desktop_banner: `/public/images/banners/${subserviceData.desktop_banner}`}
     return (
         <>
-        <div className='container-fluid banner-area'>
-            <div className='container text-center'>
-                <h1 className='bold-7'>Special Event</h1>
-                <div className=''>Home / Services / Special Event</div>
-            </div>
-        </div>
+        <PageBanner props = {Banner} />
         <div className='container-fluid pt-5 pb-5'>
             <div className='container'>
             <div className='row'>

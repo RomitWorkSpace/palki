@@ -1,11 +1,12 @@
 import React, { useState, useEffect  } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from 'imgPath/PalkiLogo.png'
+import SubServiceMenu from './SubServiceMenu';
 
 
 const Header = () => {
   const [dropdownData, setDropdownData] = useState([]);
-  const [roomData, setRoomData] = useState([]);
+  const [serviceData, setServiceData] = useState([]);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [clicked, setClicked] = useState(false);
   const [dropdown1Visible, setDropdown1Visible] = useState(false);
@@ -28,17 +29,17 @@ const Header = () => {
 
   useEffect(() => {
 
-    const fetchRoomData = async () => {
+    const fetchServiceData = async () => {
       try {
-        const response = await fetch('https://filmcityinfo.com/api/rooms');
+        const response = await fetch('https://filmcityinfo.com/api/services');
         const data = await response.json();
-        setRoomData(data.rooms);
+        setServiceData(data.services);
       } catch (error) {
         console.error('Error fetching dropdown data:', error);
       }
     };
 
-    fetchRoomData();
+    fetchServiceData();
   }, []);
 
 
@@ -47,11 +48,11 @@ const Header = () => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
 
-  const toggleServiceDropdown = () =>{
+  const toggleRoomDropdown = () =>{
       setDropdown1Visible(!dropdown1Visible);
   }
 
-  const toggleRoomDropdown = () =>{
+  const toggleServiceDropdown = () =>{
     setDropdown2Visible(!dropdown2Visible);
 }
 
@@ -83,18 +84,23 @@ const Header = () => {
         <ul>
           <li onClick={() => handleNav()}><Link to="/" className="active">Home</Link></li>
           <li onClick={() => handleNav()}><Link to="/about">About</Link></li>
-          <li className="dropdown" onClick={() => toggleRoomDropdown()}><Link to="" id="down" className={dropdown2Visible ? 'active' : 'deactive'}><span>Services</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+          <li className="dropdown" onClick={() => toggleServiceDropdown()}><Link to="" id="down" className={dropdown2Visible ? 'active' : 'deactive'}><span>Services</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul id="inner-down" className={dropdown2Visible ? 'dropdown-active' : 'dropdown-deactive'}>
                     
-                        {roomData.map((room) => (
+
+                      {serviceData.map((service, index) => (
                           
-                          <li onClick={() => handleNav()}><Link to={`/rooms/${room.slug}`}>{room.name}</Link></li>
-                        ))}
+                          <li className="dropdown myList" onClick={(e) => toggleDropdown(e, index)}><Link to="#" className={activeDropdown === index? 'active' : 'hidden'}><span>{ service.name }</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+                              <ul className={activeDropdown === index? 'dropdown-active' : 'hidden'}>
+                                  <SubServiceMenu props = {service.slug} />
+                              </ul>
+                          </li>
+                      ))}
 
             </ul>
           </li>
 
-          <li className="dropdown" onClick={() => toggleServiceDropdown()}><Link to="" id="down" className={dropdown1Visible ? 'active' : 'deactive'}><span>Events</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+          {/* <li className="dropdown" onClick={() => toggleServiceDropdown()}><Link to="" id="down" className={dropdown1Visible ? 'active' : 'deactive'}><span>Events</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul id="inner-down" className={dropdown1Visible ? 'dropdown-active' : 'dropdown-deactive'}>
      
                         {dropdownData.map((dropdown) => (
@@ -103,7 +109,7 @@ const Header = () => {
                         ))}
 
             </ul>
-          </li>
+          </li> */}
 
           <li onClick={() => handleNav()}><Link to="/blog">Blog</Link></li>
           <li onClick={() => handleNav()}><Link to="/contact">Contact</Link></li>

@@ -21,14 +21,8 @@ function Layout() {
         <Route path="/contact" exact element={<Contact />} />
         <Route path="/blog" exact element={<Blog />} />
         <Route path="/services" exact element={<Service />} />
-        <Route path="/service-detail" exact element={<ServiceDetail />} />
+        <Route path="/service/:slug" exact element={<ServiceDetail />} />
         <Route path="/share-query" exact element={<Booking />} />
-        {/* <Route path="/about" exact element={<About/>} />
-        <Route path="/hostel" exact element={<HostelRoom />} />
-        <Route path="/room-detail" exact element={<RoomDetail />} />
-        <Route path='/facilities/:slug' exact element={<Service />} />
-        <Route path="/gallery" exact element={<Gallery />} />
-        <Route path="/contact" exact element={<Contact />} /> */}
     </Routes>
     <Footer />
     </>

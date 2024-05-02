@@ -24,7 +24,7 @@ function BookingSection() {
     return (
         <>
         <div className='container-fluid pt-5 pb-5 home-contact-bg'>
-            <h4 className='text-center clr-palki bold-7'>Book Us</h4>
+            <h4 className='text-center clr-palki bold-7'>Ask Query</h4>
             <h2 className='text-center bold-9'>Where You Want Our Services</h2>
 
             <div className='container pt-5'>

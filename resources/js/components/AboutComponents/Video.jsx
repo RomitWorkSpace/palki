@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import CounterImg from 'imgPath/c1.svg'
+import DiwaliIcon from 'imgPath/Diwali-Mela.png'
+import HoliIcon from 'imgPath/holi.png'
+import MusicalIcon from 'imgPath/Musical.png'
+import FamilyIcon from 'imgPath/family.png'
 
 function Video() {
     return (
@@ -23,28 +26,28 @@ function Video() {
                         <div className='row'>
                             <div className='col-md-3 mb-4'>
                                 <div className='counter-inner'>
-                                    <img src={CounterImg} alt="counter" width="100%" />
+                                    <img src={FamilyIcon} alt="counter" width="100%" />
                                     <h4 className=''>12,000+</h4>
                                     <p>Pax Family Day</p>
                                 </div>
                             </div>
                             <div className='col-md-3 mb-4'>
                                 <div className='counter-inner'>
-                                    <img src={CounterImg} alt="counter" width="100%" />
+                                    <img src={DiwaliIcon} alt="counter" width="100%" />
                                     <h4 className=''>6,000+</h4>
                                     <p>Pax Diwali Mela</p>
                                 </div>
                             </div>
                             <div className='col-md-3 mb-4'>
                                 <div className='counter-inner'>
-                                    <img src={CounterImg} alt="counter" width="100%" />
+                                    <img src={MusicalIcon} alt="counter" width="100%" />
                                     <h4 className=''>3,000+</h4>
                                     <p>Musical Concert</p>
                                 </div>
                             </div>
                             <div className='col-md-3 mb-4'>
                                 <div className='counter-inner'>
-                                    <img src={CounterImg} alt="counter" width="100%" />
+                                    <img src={HoliIcon} alt="counter" width="100%" />
                                     <h4 className=''>1,200+</h4>
                                     <p>Holi Party</p>
                                 </div>

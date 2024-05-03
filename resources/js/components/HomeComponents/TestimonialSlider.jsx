@@ -10,6 +10,10 @@ import TestimonialCard from './TestimonialCard';
 
 
 function TestimonialSlider() {
+
+    const Client1 = {name: "Mr. Anil Sareen", cname: "EXL Services", quote: "Palki Food has been always very supportive, very positive people to work with. I have seen them growing faster than anyone in the food business."}
+    const Client2 = {name: "Mr. Shishir Shahapure", cname: "Samsung Electronics", quote: "we have very good experience with the vendor on time delivery and verity is provided."}
+    const Client3 = {name: "Parveen Deshwal", cname: "Capgemini ", quote: "Good quality Food and hygienically maintain and supportive staff."}
     return (
         <>
         <Swiper
@@ -37,13 +41,13 @@ function TestimonialSlider() {
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)} className="banner-section">
                 <SwiperSlide>
-                    <TestimonialCard />
+                    <TestimonialCard props = { Client1 }/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <TestimonialCard />
+                    <TestimonialCard props = { Client2 } />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <TestimonialCard />
+                    <TestimonialCard props = { Client3 } />
                 </SwiperSlide>
             </Swiper>
 

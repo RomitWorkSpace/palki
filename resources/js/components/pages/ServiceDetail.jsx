@@ -3,6 +3,7 @@ import GallerySection from '../HomeComponents/GallerySection'
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import PageBanner from '../../common/PageBanner';
+import FaqSection from '../ServiceComponents/FaqSection';
 
 function ServiceDetail() {
 
@@ -38,6 +39,7 @@ function ServiceDetail() {
             </div>
             </div>
         </div>
+        <FaqSection />
         <GallerySection />
         </>
     )

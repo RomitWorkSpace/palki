@@ -17,12 +17,16 @@ function SubServiceMenu({ props }){
 
     }, []);
 
+    const handleSebMenu = () =>{
+        document.querySelector("body").classList.remove("mobile-nav-active");
+    }
+
     var subserviceMenu = "";
 
     subserviceMenu = submenu.map( (item, index) => {
         return (
             <>
-                  <li onClick={() => handleNav()}><Link to={ `/service/${item.slug}` }>{item.title}</Link></li>
+                  <li onClick={() => handleSebMenu()}><Link to={ `/service/${item.slug}` }>{item.title}</Link></li>
             </>
         )
     })

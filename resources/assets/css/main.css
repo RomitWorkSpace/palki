@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: #406aff;
+  color: #eb2026;
   text-decoration: none;
 }
 
@@ -333,7 +333,6 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    margin-left:20px;
     font-family: Nunito;
     font-size: 14px;
     font-weight: 700;
@@ -384,11 +383,11 @@ section {
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
     border-radius: 4px;
-    border-bottom:5px solid #d8841d;
+    border-bottom:5px solid #eb2026;
   }
 
   .navbar .dropdown ul li {
-    min-width: 200px;
+    min-width: 215px;
   }
 
   .navbar .dropdown ul a {

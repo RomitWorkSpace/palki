@@ -10,11 +10,35 @@
 
 
       <!-- Vendor JS Files -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
       <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+      <link href="https://fonts.google.com/specimen/Young+Serif" rel="stylesheet">
+      <link href="https://fonts.google.com/specimen/Playfair+Display" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+      <style>
+        .whatsapp {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    height: 80px;
+    width: 80px;
+    z-index: 9999;
+}
+      </style>
     </head>
     <body style="">
+    <a href="tel:+918860619770">
+    <div class="phone-icon">
+        <img src="images/phone-icon.png" alt="phone" width="90%" />
+        <div class="phone-wave"></div>
+    </div>
+    </a>
+    
+    <div class="whatsapp">
+        <a href="https://wa.me/+918860619770">
+            <img src="whatsapp_icon.png" width="100%" alt="whatsapp" />
+        </a>
+    </div>
     <div id="app"></div>
         @viteReactRefresh
         @vite(['resources/js/app.jsx'])

@@ -9,7 +9,7 @@ function Video() {
     return (
         <>
         <div className='container pt-5 pb-5'>
-            <div className='row'>
+            <div className='row align-items-center'>
                 <div className='col-md-5'>
                     <div className='video-wrapper'>
                         <img src="https://kamleshyadav.com/html/catering/html/assets/images/main/banner-bg.jpg" alt="video" width="100%" />
@@ -56,7 +56,7 @@ function Video() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div><hr/>
         </>
     )
 }

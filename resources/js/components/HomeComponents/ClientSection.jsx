@@ -23,67 +23,67 @@ function ClientSection() {
     return (
         <>
         <div className='container-fluid pt-8'>
-            <h4 className='text-center clr-palki bold-7'>Esteemed Clients</h4>
-            <h2 className='text-center bold-9'>Delivering Food for leading brands</h2>
+            <h4 className='text-center clr-palki bold-7 dancing'>Esteemed Clients</h4>
+            <h2 className='text-center bold-9'>Serving the Leading Brands of Industry</h2>
             <div className='container pt-4' data-aos="fade-up">
                 <div className='row align-items-center'>
-                    <div className='col-md-2 col-6 mb-4'>
-                        <div className='client-bg'>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
                             <img src={ Ienergizer } alt="Ienergizer" width="100%" />
                         </div>
                     </div>
-                    <div className='col-md-2 col-6 mb-4'>
-                        <div className='client-bg'>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
                             <img src={ Samsung } alt="Samsung" width="100%" />
                         </div>
                     </div>
-                    <div className='col-md-2 col-6 mb-4'>
-                        <div className='client-bg'>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
                             <img src={ Barco } alt="Barco" width="100%" />
                         </div>
                     </div>
-                    <div className='col-md-2 col-6 mb-4'>
-                        <div className='client-bg'>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
                             <img src={ Capgemini } alt="capgemini" width="100%" />
                         </div>
                     </div>
-                    <div className='col-md-2 col-6 mb-4'>
-                        <div className='client-bg'>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
                             <img src={ Contata } alt="contata" width="100%" />
                         </div>
                     </div>
-                    <div className='col-md-2 col-6 mb-4'>
-                        <div className='client-bg'>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
                             <img src={ Exl } alt="exl" width="100%" />
                         </div>
                     </div>
-                    <div className='col-md-2 col-6 mb-4'>
-                        <div className='client-bg'>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
                             <img src={ Ds } alt="Ds group" width="100%" />
                         </div>
                     </div>
-                    <div className='col-md-2 col-6 mb-4'>
-                        <div className='client-bg'>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
                             <img src={ Genpact } alt="Genpact" width="100%" />
                         </div>
                     </div>
-                    <div className='col-md-2 col-6 mb-4'>
-                        <div className='client-bg'>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
                             <img src={ Giss } alt="Giss" width="100%" />
                         </div>
                     </div>
-                    <div className='col-md-2 col-6 mb-4'>
-                        <div className='client-bg'>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
                             <img src={ IBM } alt="IBM" width="100%" />
                         </div>
                     </div>
-                    <div className='col-md-2 col-6 mb-4'>
-                        <div className='client-bg'>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
                             <img src={ IndiaTv } alt="India TV" width="100%" />
                         </div>
                     </div>
-                    <div className='col-md-2 col-6 mb-4'>
-                        <div className='client-bg'>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
                             <img src={ Sunwodr } alt="Sunwodr" width="100%" />
                         </div>
                     </div>

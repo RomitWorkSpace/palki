@@ -1,7 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { useForm } from 'react-hook-form'
 import axios from 'axios';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import BookingBg from 'imgPath/book-event-bg.jpg'
 
 function BookingSection() {
     const {
@@ -21,16 +25,26 @@ function BookingSection() {
         }
     }
 
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
     return (
         <>
-        <div className='container-fluid pt-5 pb-5 home-contact-bg'>
-            <h4 className='text-center clr-palki bold-7'>Ask Query</h4>
-            <h2 className='text-center bold-9'>Where You Want Our Services</h2>
+        <div className='container-fluid pt-5 pb-5 home-contact-bg' style={{backgroundImage:`url(${BookingBg})`}}>
+            <h4 className='text-center clr-palki bold-7 dancing'>Share Query</h4>
+            <h2 className='text-center bold-9' data-aos="fade-right">Details are Safe With Us</h2>
 
             <div className='container pt-5'>
+                <div className='row'>
+                <div className='col-md-2'></div>
+                <div className='col-md-8'>
+                {formstatus != null && (
+                    <div className='alert alert-success'>{formstatus}</div>
+                )}
                 <form onSubmit={handleSubmit(handleForm)}>
                     <div className='row'>
-                        <div className='col-md-4 mb-4'>
+                        <div className='col-md-6 mb-4'>
                             <div className='form-group'>
                                 <label htmlFor="name">Name</label>
                                 <input type="text" 
@@ -43,6 +57,23 @@ function BookingSection() {
                                 />
 
                                 {errors.name?.type === "required" && (
+                                     <small className='clr-red'>* This field is required</small>
+                                )}
+                            </div>
+                        </div>
+
+                        <div className='col-md-6 mb-4'>
+                            <div className='form-group'>
+                                <label htmlFor="email">Email</label>
+                                <input type="email" 
+                                name="email" 
+                                className='form-control' 
+                                placeholder="Enter Email" 
+                                {...register("email",{
+                                    required: true
+                                })}
+                                />
+                                {errors.email?.type === "required" && (
                                      <small className='clr-red'>* This field is required</small>
                                 )}
                             </div>
@@ -64,29 +95,14 @@ function BookingSection() {
                                 )}
                             </div>
                         </div>
-                        <div className='col-md-4 mb-4'>
-                            <div className='form-group'>
-                                <label htmlFor="email">Email</label>
-                                <input type="email" 
-                                name="email" 
-                                className='form-control' 
-                                placeholder="Enter Email" 
-                                {...register("email",{
-                                    required: true
-                                })}
-                                />
-                                {errors.email?.type === "required" && (
-                                     <small className='clr-red'>* This field is required</small>
-                                )}
-                            </div>
-                        </div>
+                        
                         <div className='col-md-4 mb-4'>
                             <div className='form-group'>
                             <label htmlFor="event">Query</label>
                                 <select name="query" id="" className='form-control' {...register("query",{
                                     required: true
                                 })}>
-                                    <option value="">--- Nature of Query ---</option>
+                                    <option value="">--- Type of Query ---</option>
                                     <option value="corporate_meals">Corporate Cafeteria Meals</option>
                                     <option value="industrial_meals">Industrial Canteen Meals</option>
                                     <option value="outdoor-catering">Outdoor Catering</option>
@@ -101,30 +117,22 @@ function BookingSection() {
                         </div>
                         <div className='col-md-4 mb-4'>
                             <div className='form-group'>
-                            <label htmlFor="person">Person</label>
-                                <select name="person" id="" className='form-control' {...register("person",{
-                                    required: true
-                                })}>
-                                    <option value="">no. of person</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
+                            <label htmlFor="person">No. of Pax</label>
+                                <input type="number" name="person" className='form-control' placeholder="No. of Pax" />
                                 {errors.person?.type === "required" && (
                                      <small className='clr-red'>* This field is required</small>
                                 )}
                             </div>
                         </div>
                         
-                        <div className='col-md-4 mb-4 text-center'>
+                    </div>
+                        <div className='mb-4 mt-4 text-center'>
                            <button type="submit" className='btn-palki'>Submit</button>
                         </div>
-                        
-                    </div>
-                    
                 </form>
+                </div>
+                </div>
+                <div className='col-md-2'></div>
             </div>
         </div>
         </>

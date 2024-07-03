@@ -87,12 +87,12 @@ const Header = () => {
           <li className="dropdown" onClick={() => toggleServiceDropdown()}><Link to="" id="down" className={dropdown2Visible ? 'active' : 'deactive'}><span>Services</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul id="inner-down" className={dropdown2Visible ? 'dropdown-active' : 'dropdown-deactive'}>
                     
-
+ 
                       {serviceData.map((service, index) => (
                           
                           <li className="dropdown myList" onClick={(e) => toggleDropdown(e, index)}><Link to="#" className={activeDropdown === index? 'active' : 'hidden'}><span>{ service.name }</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
                               <ul className={activeDropdown === index? 'dropdown-active' : 'hidden'}>
-                                  <SubServiceMenu props = {service.slug} />
+                                  <SubServiceMenu props = {service.slug} handleNavbar = { handleNav } />
                               </ul>
                           </li>
                       ))}

@@ -1,5 +1,4 @@
 import React from 'react'
-import HeroSection from '../HomeComponents/HeroSection'
 import DishSection from '../HomeComponents/DishSection'
 import ServiceSection from '../HomeComponents/ServiceSection'
 import BookingSection from '../HomeComponents/BookingSection'
@@ -9,11 +8,12 @@ import TeamSection from '../HomeComponents/TeamSection'
 import BlogSection from '../HomeComponents/BlogSection'
 import TestimonialSection from '../HomeComponents/TestimonialSection'
 import ClientSection from '../HomeComponents/ClientSection'
+import MainSlider from '../../common/MainSlider'
 
 function Home() {
     return (
         <>
-        <HeroSection />
+        <MainSlider />
         <StorySection />
         <ServiceSection />
         <BookingSection />

@@ -1,17 +1,23 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import Ienergizer from 'imgPath/images/ienergier.png'
 import Samsung from 'imgPath/images/samsung.png'
-import Barco from 'imgPath/images/barco.jpg'
-import Capgemini from 'imgPath/images/capgemini.png'
+import UKG from 'imgPath/images/ukg.png'
+import NPCL from 'imgPath/images/npcl.jpg'
 import Contata from 'imgPath/images/contata.png'
 import Exl from 'imgPath/images/exl.jpg'
 import Ds from 'imgPath/images/ds_group.png'
 import Genpact from 'imgPath/images/genpact.png'
 import Giss from 'imgPath/images/Giss.png'
-import IBM from 'imgPath/images/ibm.png'
+import APL from 'imgPath/images/APL.jpg'
+import RMS from 'imgPath/images/rms.png'
+import KGL from 'imgPath/images/kgl.jpg'
+import MD from 'imgPath/images/md.png'
+import Applied from 'imgPath/images/applied.jpg'
+import Ingram from 'imgPath/images/ingram.png'
+import QN from 'imgPath/images/qn.jpeg'
 import IndiaTv from 'imgPath/images/India-TV.jpg'
 import Sunwodr from 'imgPath/images/sunwodr.jpg'
 
@@ -20,12 +26,18 @@ function ClientSection() {
         AOS.init();
       }, []);
 
+      const [showClient, setShowClient] = useState(false)
+      const handleClient = () =>{
+        setShowClient(!showClient)
+      }
+
     return (
         <>
         <div className='container-fluid pt-8'>
-            <h4 className='text-center clr-palki bold-7 dancing'>Esteemed Clients</h4>
-            <h2 className='text-center bold-9'>Serving the Leading Brands of Industry</h2>
+            <h2 className='text-center clr-palki bold-7 sm-text-shadow dancing'>Esteemed Clients</h2>
+            <h6 className='text-center bold-9'>Serving the Leading Brands of Industry</h6>
             <div className='container pt-4' data-aos="fade-up">
+                <div className={showClient ? '' : 'client-container'}>
                 <div className='row align-items-center'>
                     <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
                         <div className=''>
@@ -39,12 +51,7 @@ function ClientSection() {
                     </div>
                     <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
                         <div className=''>
-                            <img src={ Barco } alt="Barco" width="100%" />
-                        </div>
-                    </div>
-                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
-                        <div className=''>
-                            <img src={ Capgemini } alt="capgemini" width="100%" />
+                            <img src={ UKG } alt="Samsung" width="100%" />
                         </div>
                     </div>
                     <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
@@ -69,14 +76,20 @@ function ClientSection() {
                     </div>
                     <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
                         <div className=''>
-                            <img src={ Giss } alt="Giss" width="100%" />
+                            <img src={ NPCL } alt="npcl" width="100%" />
                         </div>
                     </div>
                     <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
                         <div className=''>
-                            <img src={ IBM } alt="IBM" width="100%" />
+                            <img src={ APL } alt="apl" width="100%" />
                         </div>
                     </div>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
+                            <img src={ Giss } alt="Giss" width="100%" />
+                        </div>
+                    </div>
+                    
                     <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
                         <div className=''>
                             <img src={ IndiaTv } alt="India TV" width="100%" />
@@ -87,6 +100,40 @@ function ClientSection() {
                             <img src={ Sunwodr } alt="Sunwodr" width="100%" />
                         </div>
                     </div>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
+                            <img src={ RMS } alt="RMS Moody" width="100%" />
+                        </div>
+                    </div>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
+                            <img src={ KGL } alt="KGL" width="100%" />
+                        </div>
+                    </div>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
+                            <img src={ Ingram } alt="ingram" width="100%" />
+                        </div>
+                    </div>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
+                            <img src={ MD } alt="md" width="100%" />
+                        </div>
+                    </div>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
+                            <img src={ Applied } alt="applied" width="100%" />
+                        </div>
+                    </div>
+                    <div className='col-md-2 client-bg col-6 mb-4 rotate-in-2-cw'>
+                        <div className=''>
+                            <img src={ QN } alt="QN" width="100%" />
+                        </div>
+                    </div>
+                </div>
+                <div className={showClient ? 'd-none' : 'hider'}>
+                    <button onClick = {()=>handleClient()} className='btn-palki'>View all Client</button>
+                </div>
                 </div>
             </div>
         </div>

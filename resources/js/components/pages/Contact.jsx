@@ -22,7 +22,7 @@ function Contact() {
         console.log(formData);
         const response = await axios.post('/api/contact-form', formData);
         if (response.status === 200){
-            setFormStatus('Form submit successfully');
+            setFormStatus('Message has received successfully! Thank You');
             reset();
         }
     }
@@ -36,6 +36,9 @@ function Contact() {
                 <div className='row'>
                     <div className='col-md-2'></div>
                     <div className='col-md-8 contact-inner'>
+                    {formstatus != null && (
+                        <div className='alert alert-success'>{formstatus}</div>
+                    )}
                         <div className='contact-form'>
                             <form onSubmit={handleSubmit(handleForm)}>
                                 <div className='row'>
@@ -160,7 +163,7 @@ function Contact() {
         </div>
 
         <div className='container-fluid p-0'>
-            <Iframe url="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1752.446899703991!2d77.4528871349845!3d28.542911675713796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPlot%20no.%20228%20Udhyog%20Kendra%201st%20Ecotech%203%2C%20Extension%2C%20Noida!5e0!3m2!1sen!2sin!4v1713355519819!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+            <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1263.992276023362!2d77.4546050366629!3d28.54720800822492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce55c26ffff89%3A0xaef9a254844ae6e7!2sPalki%20Food%20Services%20The%20Best%20Catering%20Services!5e0!3m2!1sen!2sin!4v1719900813814!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
         </div>
         </>
     )

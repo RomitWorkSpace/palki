@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import axios from 'axios'
 
-function SubServiceMenu({ props }){
+function SubServiceMenu({ props, handleNavbar }){
     const [submenu, setSubMenu] = useState([]);
     
     useEffect(() => {
@@ -17,16 +17,12 @@ function SubServiceMenu({ props }){
 
     }, []);
 
-    const handleSebMenu = () =>{
-        document.querySelector("body").classList.remove("mobile-nav-active");
-    }
-
     var subserviceMenu = "";
 
     subserviceMenu = submenu.map( (item, index) => {
         return (
             <>
-                  <li onClick={() => handleSebMenu()}><Link to={ `/service/${item.slug}` }>{item.title}</Link></li>
+                  <li onClick={() => handleNavbar()}><Link to={ `/service/${item.slug}` }>{item.title}</Link></li>
             </>
         )
     })

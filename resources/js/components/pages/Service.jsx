@@ -6,6 +6,8 @@ import dbanner from 'imgPath/banners/Services-banner.jpg'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
+import Divider from 'imgPath/divider.png'
+
 function Service() {
 
     const [allservices, setAllServices] = useState([]);
@@ -46,6 +48,9 @@ function Service() {
                         <img src={`https://filmcityinfo.com/public/images/services/${item.image}`} alt="event" width="100%" style={{borderRadius:'10px'}} />
                     </div>
                 </div>
+                <div className='mt-4 mb-4 divider'>
+                    <img src={ Divider } alt="separator" width="100%" />
+                </div>
             </div>
              </>:<>
              <div key={item.id} className='container pt-5'>
@@ -65,6 +70,9 @@ function Service() {
                         </Link>
                     </div>
                 </div>
+                <div className='mt-4 mb-4 divider'>
+                    <img src={ Divider } alt="separator" width="100%" />
+                </div>
             </div>
              </>}
             </>
@@ -76,7 +84,7 @@ function Service() {
         <>
         <PageBanner props = {Banners}/>
         <div className='container-fluid pt-5 pb-5'>
-            <h4 className='text-center clr-palki bold-7'>Our Services</h4>
+            <h2 className='text-center clr-palki bold-7 font-charm'>Our Services</h2>
 
                 { serviceData }
 

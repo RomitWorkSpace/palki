@@ -30,8 +30,8 @@ function Video() {
                             <div className='col-md-3 mb-4'>
                                 <div className='counter-inner'>
                                     <img src={FamilyIcon} alt="counter" width="100%" />
-                                    <h4 className='clr-palki'>
-                                        <CountUp start={0} end={12000} duration={4} scrollSpyOnce />+
+                                    <h4 className='clr-palki mt-2'>
+                                        <CountUp start={0} end={12000} duration={4} enableScrollSpy={true} scrollSpyOnce={ true } />+
                                     </h4>
                                     <p>Pax Family Day</p>
                                 </div>
@@ -39,8 +39,8 @@ function Video() {
                             <div className='col-md-3 mb-4'>
                                 <div className='counter-inner'>
                                     <img src={DiwaliIcon} alt="counter" width="100%" />
-                                    <h4 className='clr-palki'>
-                                        <CountUp start={0} end={6000} duration={4} scrollSpyOnce />+
+                                    <h4 className='clr-palki mt-2'>
+                                        <CountUp start={0} end={16000} duration={4} enableScrollSpy={true} scrollSpyOnce={ true } />+
                                     </h4>
                                     <p>Pax Diwali Mela</p>
                                 </div>
@@ -48,8 +48,8 @@ function Video() {
                             <div className='col-md-3 mb-4'>
                                 <div className='counter-inner'>
                                     <img src={MusicalIcon} alt="counter" width="100%" />
-                                    <h4 className='clr-palki'>
-                                        <CountUp start={0} end={3000} duration={4} scrollSpyOnce />+
+                                    <h4 className='clr-palki mt-2'>
+                                        <CountUp start={0} end={3000} duration={4} enableScrollSpy={true} scrollSpyOnce={ true } />+
                                     </h4>
                                     <p>Musical Concert</p>
                                 </div>
@@ -57,8 +57,8 @@ function Video() {
                             <div className='col-md-3 mb-4'>
                                 <div className='counter-inner'>
                                     <img src={HoliIcon} alt="counter" width="100%" />
-                                    <h4 className='clr-palki'>
-                                        <CountUp start={0} end={1200} duration={4} scrollSpyOnce />+
+                                    <h4 className='clr-palki mt-2'>
+                                        <CountUp start={0} end={1200} duration={4} enableScrollSpy={true} scrollSpyOnce={ true } />+
                                     </h4>
                                     <p>Holi Party</p>
                                 </div>

@@ -32,8 +32,8 @@ function BookingSection() {
     return (
         <>
         <div className='container-fluid pt-5 pb-5 home-contact-bg' style={{backgroundImage:`url(${BookingBg})`}}>
-            <h4 className='text-center clr-palki bold-7 dancing'>Share Query</h4>
-            <h2 className='text-center bold-9' data-aos="fade-right">Details are Safe With Us</h2>
+            <h1 className='text-center clr-palki sm-text-shadow bold-7 font-charm'>Share Query</h1>
+            <h6 className='text-center bold-9' data-aos="fade-right">Details are Safe With Us!</h6>
 
             <div className='container pt-5'>
                 <div className='row'>

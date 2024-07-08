@@ -7,14 +7,14 @@ import CorporateIcon from 'imgPath/Corporate-Catering.png'
 import BakeryIcon from 'imgPath/Industrial-Bakery.png'
 
 function ServiceSection() {
-    const EventService = {icon: EventIcon, name: 'Event Catering'}
-    const CorporateService = {icon: CorporateIcon, name: 'Corporate Catering'}
-    const BakeryService = {icon: BakeryIcon, name: 'Industrial Bakery'}
+    const EventService = {icon: EventIcon, name: 'Event Catering', content : 'We specialize in event catering services'}
+    const CorporateService = {icon: CorporateIcon, name: 'Corporate Catering', content : 'We specialize in corporate catering services'}
+    const BakeryService = {icon: BakeryIcon, name: 'Industrial Bakery', content : 'We specialize in industrial bakery services'}
     return (
         <>
         <div className='container-fluid wrapper-bg pt-8 pb-5'>
-            <h4 className='text-center clr-palki bold-7'>Our Services</h4>
-            <h2 className='text-center bold-9'>What We Offer</h2>
+            <h1 className='text-center clr-palki sm-text-shadow bold-7 font-charm'>Our Services</h1>
+            <h6 className='text-center bold-9'>What We Offer</h6>
             <div className='container pt-5'>
                 <div className='row' style={{justifyContent:'space-around'}}>
                     <div className='col-md-3 mb-4'>

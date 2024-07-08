@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import ExperienceIcon from 'imgPath/1.png'
-import DealIcon from 'imgPath/Delicious-Deals.png'
+import DealIcon from 'imgPath/kitchen-area.png'
 import ServiceIcon from 'imgPath/24x7.png'
 import PartnerIcon from 'imgPath/3.png'
 
@@ -21,7 +21,7 @@ function StorySection() {
                         <img src="https://kamleshyadav.com/html/catering/html/assets/images/main/story.png" alt="food" width="100%" />
                     </div>
                     <div className='col-md-6'>
-                        <h4 className='clr-palki bold-7 dancing'>Our Story</h4>
+                        <h4 className='clr-palki bold-7 font-charm'>Our Story</h4>
                         <h2 className='bold-9'>Served more than 100 + clients</h2>
                         <div className='content-area text-justify p-2'>
                             <p>Welcome to Palki Food Services, your premier provider of catering solutions for various industries including corporate, industrial, and MNCs. With a track record of innovation and problem-solving, we pride ourselves on delivering top-notch services tailored to our clients' needs across different sectors and regions.</p>

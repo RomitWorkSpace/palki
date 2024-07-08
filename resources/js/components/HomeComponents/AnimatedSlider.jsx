@@ -26,11 +26,11 @@ export function FullSlider2() {
                     <div className='col-1'></div>
                     <div className='col-7'>
                         <div className='tracking-in-expand-fwd'>
-                            <h1 className='bold-9 clr-blue font-young text-shadow'>Solutions For</h1>
-                            <h1 className='bold-9 clr-blue font-young text-shadow'>Cafe</h1>
-                            <h1 className='bold-9 clr-blue font-young text-shadow'>Restaurants</h1>
-                            <h1 className='bold-9 clr-blue font-young text-shadow'>Caters</h1>
-                            <h3 className='bold-9 clr-orange font-playfair sm-text-shadow'>Wholesale Supplies / Contract Manufacturing</h3>
+                            <h1 className='bold-9 clr-blue font-charm text-shadow'>Solutions For</h1>
+                            <h1 className='bold-9 clr-blue font-charm text-shadow'>Cafe</h1>
+                            <h1 className='bold-9 clr-blue font-charm text-shadow'>Restaurants</h1>
+                            <h1 className='bold-9 clr-blue font-charm text-shadow'>Caters</h1>
+                            <h3 className='bold-9 clr-orange font-charm sm-text-shadow'>Wholesale Supplies / Contract Manufacturing</h3>
                         </div>
                         <Link to="">
                             <button className='btn-palki slide-in-bottom mt-4'>Book Now</button>
@@ -58,9 +58,9 @@ export function FullSlider3() {
                     <div className='col-1'></div>
                     <div className='col-7'>
                         <div className='tracking-in-expand-fwd'>
-                            <h1 className='bold-9 font-playfair clr-orange text-shadow'>We Cater Cake For All</h1>
-                            <h1 className='bold-9 font-young clr-blue text-shadow'>Social & Corporate Requirements</h1>
-                            <h3 className='bold-9 font-playfair clr-orange sm-text-shadow'>Evergreen flavours to customized designs</h3>
+                            <h1 className='bold-9 font-charm clr-orange text-shadow'>We Cater Cake For All</h1>
+                            <h1 className='bold-9 font-charm clr-blue text-shadow'>Social & Corporate Requirements</h1>
+                            <h3 className='bold-9 font-charm clr-orange sm-text-shadow'>Evergreen flavours to customized designs</h3>
                         </div>
                         <Link to="/share-query">
                             <button className='btn-palki slide-in-bottom mt-4'>Book Now</button>
@@ -88,9 +88,9 @@ export function FullSlider4() {
                     <div className='col-1'></div>
                     <div className='col-11'>
                         <div className='tracking-in-expand-fwd'>
-                            <h1 className='clr-blue bold-9 font-young text-shadow'>We are</h1>
-                            <h1 className="clr-blue bold-9 font-young text-shadow">Specialist in</h1>
-                            <h1 className='clr-orange bold-9 font-playfair text-shadow'>SOCIAL EVENT CATERINGS</h1>
+                            <h1 className='clr-blue bold-9 font-charm text-shadow'>We are</h1>
+                            <h1 className="clr-blue bold-9 font-charm text-shadow">Specialist in</h1>
+                            <h1 className='clr-orange bold-9 font-charm text-shadow'>SOCIAL EVENT CATERINGS</h1>
                         </div>
                 
                         <Link to="/share-query">
@@ -118,9 +118,9 @@ export function FullSlider1() {
                     <div className='col-1'></div>
                     <div className='col-7'>
                         <div className='tracking-in-expand-fwd'>
-                            <h1 className='bold-9 font-playfair clr-blue text-shadow'>Wholesomeness</h1>
-                            <h1 className='bold-9 font-playfair clr-blue text-shadow'>in food, Warmth in service</h1>
-                            <h3 className='bold-9 font-playfair clr-orange sm-text-shadow'>Best Combination for Cafeteria Meals</h3>
+                            <h1 className='bold-9 font-charm clr-blue text-shadow'>Wholesomeness</h1>
+                            <h1 className='bold-9 font-charm clr-blue text-shadow'>in food, Warmth in service</h1>
+                            <h3 className='bold-9 font-charm clr-orange sm-text-shadow'>Best Combination for Cafeteria Meals</h3>
                         </div>
                         <Link to="/share-query">
                             <button className='btn-palki slide-in-bottom mt-4'>Book Now</button>
@@ -145,9 +145,9 @@ export function ShortSlider3() {
             </div>
             <div className='container slider-text-wrap pt-4'>
                 <div className='tracking-in-expand-fwd' style={{marginTop: '55px'}}>
-                    <h4 className='bold-9 font-playfair clr-orange sm-text-shadow'>We Cater Cake For All</h4>
-                    <h4 className='bold-9 font-young clr-blue sm-text-shadow'>Social & Corporate Requirements</h4>
-                    <h6 className='bold-9 font-playfair clr-orange sm-text-shadow'>Evergreen flavours to customized design</h6>
+                    <h4 className='bold-9 font-charm clr-orange sm-text-shadow'>We Cater Cake For All</h4>
+                    <h4 className='bold-9 font-charm clr-blue sm-text-shadow'>Social & Corporate Requirements</h4>
+                    <h6 className='bold-9 font-charm clr-orange sm-text-shadow'>Evergreen flavours to customized design</h6>
                 </div>
                 <Link to="/share-query">
                     <button className='sm-btn-palki slide-in-bottom mt-4'>Book Now</button>
@@ -169,11 +169,11 @@ export function ShortSlider4() {
             </div>
             <div className='container slider-text-wrap pt-4'>
                     <div className='tracking-in-expand-fwd'>
-                        <h4 className='bold-9 clr-blue font-young sm-text-shadow'>Solution For</h4>
-                        <h4 className='bold-9 clr-blue font-young sm-text-shadow'>Cafe</h4>
-                        <h4 className='bold-9 clr-blue font-young sm-text-shadow'>Restaurants</h4>
-                        <h4 className='bold-9 clr-blue font-young sm-text-shadow'>Caters</h4>
-                        <h6 className='bold-9 clr-orange font-playfair sm-text-shadow'>Wholesale Supplies / Contract Manufacturing</h6>
+                        <h4 className='bold-9 clr-blue font-charm sm-text-shadow'>Solution For</h4>
+                        <h4 className='bold-9 clr-blue font-charm sm-text-shadow'>Cafe</h4>
+                        <h4 className='bold-9 clr-blue font-charm sm-text-shadow'>Restaurants</h4>
+                        <h4 className='bold-9 clr-blue font-charm sm-text-shadow'>Caters</h4>
+                        <h6 className='bold-9 clr-orange font-charm sm-text-shadow'>Wholesale Supplies / Contract Manufacturing</h6>
                     </div>
                     
             </div>
@@ -193,9 +193,9 @@ export function ShortSlider2() {
             </div>
             <div className='container slider-text-wrap pt-4'>
                 <div className='tracking-in-expand-fwd' style={{marginTop:'55px'}}>
-                    <h4 className='bold-9 clr-blue font-young sm-text-shadow'>We are</h4>
-                    <h4 className='bold-9 clr-blue font-young sm-text-shadow'>Specialist in</h4>
-                    <h5 className='bold-9 clr-orange font-playfair sm-text-shadow'>SOCIAL EVENT CATERINGS</h5>
+                    <h4 className='bold-9 clr-blue font-charm sm-text-shadow'>We are</h4>
+                    <h4 className='bold-9 clr-blue font-charm sm-text-shadow'>Specialist in</h4>
+                    <h5 className='bold-9 clr-orange font-charm sm-text-shadow'>SOCIAL EVENT CATERINGS</h5>
                 </div>
                 <Link to="/share-query">
                         <button className='sm-btn-palki slide-in-bottom mt-3'>Book Now</button>
@@ -217,9 +217,9 @@ export function ShortSlider1() {
             </div>
             <div className='container slider-text-wrap pt-5'>
                 <div className='tracking-in-expand-fwd'>
-                    <h4 className='bold-9 clr-blue font-young sm-text-shadow'>Wholesomeness</h4>
-                    <h4 className='bold-9 clr-blue font-young sm-text-shadow'>in food, Warmth in service</h4>
-                    <h6 className='bold-9 clr-orange font-playfair sm-text-shadow'>Best Combination for Cafeteria Meals</h6>
+                    <h4 className='bold-9 clr-blue font-charm sm-text-shadow'>Wholesomeness</h4>
+                    <h4 className='bold-9 clr-blue font-charm sm-text-shadow'>in food, Warmth in service</h4>
+                    <h6 className='bold-9 clr-orange font-charm sm-text-shadow'>Best Combination for Cafeteria Meals</h6>
                 </div>
                 <Link to="/share-query">
                         <button className='sm-btn-palki slide-in-bottom mt-3'>Book Now</button>

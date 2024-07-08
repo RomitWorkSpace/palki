@@ -16,9 +16,9 @@ function ServiceCard({props}) {
             </div>
             <div className='service-info'>
                 <h4 className=''>{props.name}</h4>
-                <p className='mt-4'>Contrary to popular belief, ipsum is not simply random.</p>
+                <p className='mt-4'>{ props.content }</p>
 
-                <Link to=""><h5 style={{color:'#212529', fontFamily:'Nunito', fontSize:'17px'}}>Read More</h5></Link>
+                <Link to="/services"><h5 style={{color:'#212529', fontFamily:'Nunito', fontSize:'17px'}}>Read More</h5></Link>
             </div>
         </div>
         </>

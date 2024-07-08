@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import CountUp from 'react-countup'
+import ReactPlayer from 'react-player'
 
 import DiwaliIcon from 'imgPath/Diwali-Mela.png'
 import HoliIcon from 'imgPath/holi.png'
@@ -21,7 +22,8 @@ function Video() {
                             </Link>
                             <div className='sonar-wave'></div>
                         </div> */}
-                        <video class="elementor-video" src="/public/Palki-Food-Full-480-1.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload" style={{width:'100%'}}></video>
+                        <ReactPlayer url="/public/Palki-Food-Full-480-1.mp4" loop = { true } muted = { true } playing = {true} width='100%' />
+                        
                     </div>
                 </div>
                 <div className='col-md-7'>

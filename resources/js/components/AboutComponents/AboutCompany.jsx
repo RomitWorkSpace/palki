@@ -27,7 +27,7 @@ function AboutCompany() {
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-6' data-aos="fade-right">
-                        <h2 className='text-center clr-palki bold-7'>
+                        <h2 className='text-center clr-palki bold-7 font-charm'>
                             Our State of Art Kitchen
                         </h2>
                         <hr className='line' />

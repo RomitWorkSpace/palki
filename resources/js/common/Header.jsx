@@ -5,12 +5,14 @@ import SubServiceMenu from './SubServiceMenu';
 
 
 const Header = () => {
+
   const [dropdownData, setDropdownData] = useState([]);
   const [serviceData, setServiceData] = useState([]);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [clicked, setClicked] = useState(false);
   const [dropdown1Visible, setDropdown1Visible] = useState(false);
   const [dropdown2Visible, setDropdown2Visible] = useState(false);
+  const [navTrack, setNavTrack] = useState(null);
 
   useEffect(() => {
 
@@ -38,7 +40,7 @@ const Header = () => {
         console.error('Error fetching dropdown data:', error);
       }
     };
-
+    setNavTrack(window.location.pathname);
     fetchServiceData();
   }, []);
 
@@ -64,6 +66,7 @@ const Header = () => {
         document.querySelector("body").classList.remove("mobile-nav-active");
       }
     setClicked(!clicked);
+    setNavTrack(window.location.pathname);
   }
 
 
@@ -82,9 +85,9 @@ const Header = () => {
       </div>
       <nav id="navbar" className="navbar">
         <ul>
-          <li onClick={() => handleNav()}><Link to="/" className="active">Home</Link></li>
-          <li onClick={() => handleNav()}><Link to="/about">About</Link></li>
-          <li className="dropdown" onClick={() => toggleServiceDropdown()}><Link to="" id="down" className={dropdown2Visible ? 'active' : 'deactive'}><span>Services</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+          <li onClick={() => handleNav()}><Link to="/" className={(navTrack === '/') ? 'active' : ''}>Home</Link></li>
+          <li onClick={() => handleNav()}><Link to="/about" className={(navTrack === '/about') ? 'active' : ''}>About</Link></li>
+          <li className="dropdown" onClick={() => toggleServiceDropdown()}><Link to="#" id="down" className={dropdown2Visible ? 'active' : 'deactive'}><span>Services</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul id="inner-down" className={dropdown2Visible ? 'dropdown-active' : 'dropdown-deactive'}>
                     
  
@@ -111,8 +114,8 @@ const Header = () => {
             </ul>
           </li> */}
 
-          <li onClick={() => handleNav()}><Link to="/blog">Blog</Link></li>
-          <li onClick={() => handleNav()}><Link to="/contact">Contact</Link></li>
+          <li onClick={() => handleNav()}><Link to="/blog" className={(navTrack == '/blog') ? 'active' : ''}>Blog</Link></li>
+          <li onClick={() => handleNav()}><Link to="/contact" className={(navTrack == '/contact') ? 'active' : ''}>Contact</Link></li>
           <li onClick={() => handleNav()}><Link to="/share-query" className="get-a-quote bg-palki">Get Free Quote</Link></li>
         </ul>
       </nav>

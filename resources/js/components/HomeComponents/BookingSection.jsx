@@ -118,10 +118,14 @@ function BookingSection() {
                         <div className='col-md-4 mb-4'>
                             <div className='form-group'>
                             <label htmlFor="person">No. of Pax</label>
-                                <input type="number" name="person" className='form-control' placeholder="No. of Pax" />
-                                {errors.person?.type === "required" && (
-                                     <small className='clr-red'>* This field is required</small>
-                                )}
+                                <input type="number" 
+                                name="person" 
+                                className='form-control' 
+                                placeholder="No. of Pax"
+                                {...register("person",{
+                                    required: false
+                                })}
+                                />
                             </div>
                         </div>
                         

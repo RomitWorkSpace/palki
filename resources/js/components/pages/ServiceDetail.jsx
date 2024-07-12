@@ -9,14 +9,28 @@ function ServiceDetail() {
 
     const { slug } = useParams();
     const [subserviceData, setSubServiceData] = useState([]);
+    const [photo, setPhoto] = useState([]);
 
     useEffect(() => {
 
         axios.get(`/api/subservice/${slug}`).then(res => {
             setSubServiceData(res.data.subservice);
+            setPhoto(res.data.subservice.photos);
         })
     },[slug]);
     const Banner = {mobile_banner: `/public/images/banners/${subserviceData.mobile_banner}`, desktop_banner: `/public/images/banners/${subserviceData.desktop_banner}`}
+
+    var allphotos = "";
+    allphotos = photo.map((item) => {
+        return(
+        <>
+        <div className='col-md-3 mb-4'>
+            <img src={`/public/images/gallery/${item.image}`} alt="event" width="100%" style={{borderRadius: '10px'}} />
+        </div>
+        </>
+        )
+    })
+
     return (
         <>
         <PageBanner props = {Banner} />
@@ -40,7 +54,16 @@ function ServiceDetail() {
             </div>
         </div>
         <FaqSection />
-        <GallerySection />
+        <div className='container-fluid wrapper-bg pt-8 pb-5'>
+            <h2 className='text-center clr-palki sm-text-shadow bold-7 font-charm'>Latest Events</h2>
+            <h6 className='text-center bold-9'>Our Social & Professional Events Gallery</h6>
+            <div className='container pt-5'>
+                
+                <div className='row'>
+                    { allphotos }
+                </div>
+            </div>
+        </div>
         </>
     )
 }

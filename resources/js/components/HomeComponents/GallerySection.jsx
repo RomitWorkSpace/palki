@@ -5,8 +5,8 @@ function GallerySection() {
     return (
         <>
         <div className='container-fluid wrapper-bg pt-8 pb-5'>
-            <h4 className='text-center clr-palki bold-7'>Latest Events</h4>
-            <h2 className='text-center bold-9'>Our Social & Professional Events Gallery</h2>
+            <h2 className='text-center clr-palki sm-text-shadow bold-7 font-charm'>Latest Events</h2>
+            <h6 className='text-center bold-9'>Our Social & Professional Events Gallery</h6>
             <div className='container pt-5'>
                 
                 <div className='row'>

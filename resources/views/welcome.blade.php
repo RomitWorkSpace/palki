@@ -14,6 +14,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
       <link href="https://fonts.google.com/specimen/Young+Serif" rel="stylesheet">
       <link href="https://fonts.google.com/specimen/Playfair+Display" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <style>
         .whatsapp {

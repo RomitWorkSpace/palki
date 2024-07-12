@@ -47,7 +47,7 @@ function Footer() {
           </ul> */}
           <p className='clr-black'>
           <i className='fa-solid fa-location clr-palki'></i> Plot no. 228 Udhyog Kendra 1st Ecotech 3, Extension, Noida <br/><br/>
-            <i className='fa-solid fa-phone clr-palki'></i> + 91-8860619770 / 71<br/>
+            <i className='fa-solid fa-phone clr-palki'></i> + 91-8860619770 / 71<br/><br/>
             <i className='fa-solid fa-envelope clr-palki'></i> info@palkifoods.co.in<br/>
           </p>
         </div>

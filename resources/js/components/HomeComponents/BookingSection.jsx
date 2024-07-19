@@ -20,7 +20,7 @@ function BookingSection() {
         console.log(formData);
         const response = await axios.post('/api/submit-form', formData);
         if (response.status === 200){
-            setFormStatus('Form submit successfully');
+            setFormStatus('Form submitted successfully, Thank you!');
             reset();
         }
     }

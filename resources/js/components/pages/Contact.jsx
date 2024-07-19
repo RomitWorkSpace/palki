@@ -154,7 +154,7 @@ function Contact() {
                             </div>
                             <div className='contact-info text-center'>
                                 <h4 className='bold-7'>Location</h4>
-                                <p>Udhyog Kendra1 Ecotech3, Extension, Noida</p>
+                                <p>Plot no. 228 Udhyog Kendra 1st Ecotech 3, Extension, Noida</p>
                             </div>
                         </div>
                     </div>

@@ -90,7 +90,7 @@ export function FullSlider4() {
                         <div className='tracking-in-expand-fwd'>
                             <h1 className='clr-blue bold-9 font-charm text-shadow'>We are</h1>
                             <h1 className="clr-blue bold-9 font-charm text-shadow">Specialist in</h1>
-                            <h1 className='clr-orange bold-9 font-charm text-shadow'>SOCIAL EVENT CATERINGS</h1>
+                            <h1 className='clr-orange bold-9 font-charm text-shadow'>Social Event Caterings</h1>
                         </div>
                 
                         <Link to="/share-query">
@@ -195,7 +195,7 @@ export function ShortSlider2() {
                 <div className='tracking-in-expand-fwd' style={{marginTop:'55px'}}>
                     <h4 className='bold-9 clr-blue font-charm sm-text-shadow'>We are</h4>
                     <h4 className='bold-9 clr-blue font-charm sm-text-shadow'>Specialist in</h4>
-                    <h5 className='bold-9 clr-orange font-charm sm-text-shadow'>SOCIAL EVENT CATERINGS</h5>
+                    <h5 className='bold-9 clr-orange font-charm sm-text-shadow'>Social Event Caterings</h5>
                 </div>
                 <Link to="/share-query">
                         <button className='sm-btn-palki slide-in-bottom mt-3'>Book Now</button>

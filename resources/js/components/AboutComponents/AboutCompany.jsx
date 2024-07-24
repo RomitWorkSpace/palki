@@ -23,7 +23,7 @@ function AboutCompany() {
       }, []);
     return (
         <>
-        <div className='container-fluid pt-5 pb-5'>
+        <div className='container-fluid pt-5 pb-5' style={{overflowX:'hidden'}}>
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-6' data-aos="fade-right">

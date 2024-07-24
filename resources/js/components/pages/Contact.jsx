@@ -7,6 +7,7 @@ import Iframe from 'react-iframe'
 import PageBanner from '../../common/PageBanner'
 import mbanner from 'imgPath/banners/Contact-banner-mb.jpg'
 import dbanner from 'imgPath/banners/Contact-banner.jpg'
+import Breadcrumb from '../../common/Breadcrumb';
 
 function Contact() {
 
@@ -31,6 +32,7 @@ function Contact() {
     return (
         <>
         <PageBanner props = {Banners} />
+        <Breadcrumb page='Contact' />
         <div className='contact-section pt-5 pb-5' style={{backgroundImage: `url(${ContactBg})`}}>
             <div className='container'>
                 <div className='row'>

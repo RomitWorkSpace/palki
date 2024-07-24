@@ -7,6 +7,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 import Divider from 'imgPath/divider.png'
+import Breadcrumb from '../../common/Breadcrumb'
 
 function Service() {
 
@@ -83,6 +84,7 @@ function Service() {
     return (
         <>
         <PageBanner props = {Banners}/>
+        <Breadcrumb page='Services' />
         <div className='container-fluid pt-5 pb-5'>
             <h2 className='text-center clr-palki bold-7 font-charm'>Our Services</h2>
 

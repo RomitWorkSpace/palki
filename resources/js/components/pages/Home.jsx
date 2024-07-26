@@ -9,12 +9,14 @@ import BlogSection from '../HomeComponents/BlogSection'
 import TestimonialSection from '../HomeComponents/TestimonialSection'
 import ClientSection from '../HomeComponents/ClientSection'
 import MainSlider from '../../common/MainSlider'
+import Video from '../AboutComponents/Video'
 
 function Home() {
     return (
         <>
         <MainSlider />
         <StorySection />
+        <Video />
         <ServiceSection />
         <BookingSection />
         <TestimonialSection />

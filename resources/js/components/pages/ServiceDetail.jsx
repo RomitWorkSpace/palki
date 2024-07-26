@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import GallerySection from '../HomeComponents/GallerySection'
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import PageBanner from '../../common/PageBanner';
 import FaqSection from '../ServiceComponents/FaqSection';
 
@@ -10,12 +10,14 @@ import LinkedIn from '@mui/icons-material/LinkedIn';
 import WhatsApp from '@mui/icons-material/WhatsApp';
 import Instagram from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
+import ServiceBreadcrumb from '../../common/ServiceBreadcrumb';
 
 function ServiceDetail() {
 
     const { slug } = useParams();
     const [subserviceData, setSubServiceData] = useState([]);
     const [photo, setPhoto] = useState([]);
+    const [relatedServices, setRelatedServices] = useState([]);
     const [path, setPath] = useState(null);
 
     useEffect(() => {
@@ -23,6 +25,7 @@ function ServiceDetail() {
         axios.get(`/api/subservice/${slug}`).then(res => {
             setSubServiceData(res.data.subservice);
             setPhoto(res.data.subservice.photos);
+            setRelatedServices(res.data.subservice.related_item);
         })
         setPath(window.location.href);
     },[slug]);
@@ -44,6 +47,7 @@ function ServiceDetail() {
     return (
         <>
         <PageBanner props = {Banner} />
+        <ServiceBreadcrumb prev={subserviceData.service_slug} current={subserviceData.name} />
         <div className='container-fluid pt-5 pb-5'>
             <div className='container'>
             <div className='row'>
@@ -89,6 +93,33 @@ function ServiceDetail() {
                     </div>
                     </div>
                     </div>
+
+                    <div className='mt-5'>
+                        <hr/>
+                        <h4 className='bold-7'>Related Services</h4>
+                        <div className='row mt-4'>
+                            {relatedServices.filter(item => item.slug != subserviceData.slug).map(service => (
+                                <>
+                                <div className='col-md-6'>
+                                <div className='related-service mb-4'>
+                                    <img src={`https://filmcityinfo.com/public/images/services/${service.image}`} 
+                                    alt="event" width="100%" 
+                                    style={{borderRadius:'10px'}}
+                                    />
+                                    <Link to={`/service/${service.slug}`}>
+                                    <div className='p-3 text-center anim-box'>
+                                        <h5 className='bold-7 clr-white'>{ service.name }</h5>
+                                    </div>
+                                    </Link>
+                                </div>
+                                </div>
+                                </>
+                            ))
+                                
+                            }
+                        </div>
+                    </div>
+
                 </div>
             </div>
             </div>

@@ -10,6 +10,7 @@ import BlogDetail from '../components/pages/BlogDetail';
 import Service from '../components/pages/Service';
 import ServiceDetail from '../components/pages/ServiceDetail';
 import Booking from '../components/pages/Booking';
+import Training from '../components/pages/Training';
 
 
 function Layout() {
@@ -21,6 +22,7 @@ function Layout() {
         <Route path="/about" exact element={<About />} />
         <Route path="/contact" exact element={<Contact />} />
         <Route path="/blog" exact element={<Blog />} />
+        <Route path="/training-development" exact element={<Training />} />
         <Route path="/blog-detail" exact element={<BlogDetail /> } />
         <Route path="/services" exact element={<Service />} />
         <Route path="/service/:slug" exact element={<ServiceDetail />} />

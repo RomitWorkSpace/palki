@@ -5,11 +5,13 @@ import Logo from 'imgPath/PalkiLogo.png'
 import PalkiBg from 'imgPath/palki-footer-bg.jpg'
 import { Link } from 'react-router-dom'
 
+const FooterBg = 'https://png.pngtree.com/thumb_back/fh260/background/20230415/pngtree-hd-pastel-pink-gold-marble-background-image_2440700.jpg'
+
 function Footer() {
     return (
         <>
 
-  <footer id="footer" className="footer">
+  <footer id="footer" className="footer" style={{backgroundImage:`url(${FooterBg})`}} >
 
     <div className="container">
       <div className="row gy-4">
@@ -21,8 +23,8 @@ function Footer() {
           <div className="social-links d-flex mt-4">
             <Link to="#" className="twitter"><i className="bi bi-twitter clr-palki"></i></Link>
             <Link to="https://www.facebook.com/pg/PalkiFoodServices/posts/" className="facebook"><i className="bi bi-facebook clr-palki"></i></Link>
-            <Link to="#" className="instagram"><i className="bi bi-instagram clr-palki"></i></Link>
-            <Link to="https://www.linkedin.com/company/palki-foods-india-pvt-ltd-/?originalSubdomain=in" className="linkedin"><i className="bi bi-linkedin clr-palki"></i></Link>
+            <Link to="https://www.instagram.com/palkifoodsservices/" className="instagram"><i className="bi bi-instagram clr-palki"></i></Link>
+            <Link to="https://www.linkedin.com/company/palki-foods-india-pvt-ltd" className="linkedin"><i className="bi bi-linkedin clr-palki"></i></Link>
           </div>
         </div>
 

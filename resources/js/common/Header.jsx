@@ -10,7 +10,7 @@ const Header = () => {
   const [serviceData, setServiceData] = useState([]);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [clicked, setClicked] = useState(false);
-  const [dropdown1Visible, setDropdown1Visible] = useState(false);
+  const [palkiPreneures, setpalkiPreneures] = useState(false);
   const [dropdown2Visible, setDropdown2Visible] = useState(false);
   const [navTrack, setNavTrack] = useState(null);
 
@@ -50,8 +50,8 @@ const Header = () => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
 
-  const toggleRoomDropdown = () =>{
-      setDropdown1Visible(!dropdown1Visible);
+  const togglePalki = () =>{
+      setpalkiPreneures(!palkiPreneures);
   }
 
   const toggleServiceDropdown = () =>{
@@ -100,6 +100,12 @@ const Header = () => {
                           </li>
                       ))}
 
+            </ul>
+          </li>
+
+          <li className="dropdown" onClick={() => togglePalki()}><Link to="#" id="down" className={palkiPreneures ? 'active' : 'deactive'}><span>Palkipreneures</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+            <ul id="inner-down" className={palkiPreneures ? 'dropdown-active' : 'dropdown-deactive'}>
+              <li onClick={() => handleNav()}><Link to="/training-development">Training, learning & Growing</Link></li>
             </ul>
           </li>
 

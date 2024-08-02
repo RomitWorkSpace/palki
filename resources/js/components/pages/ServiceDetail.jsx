@@ -11,6 +11,7 @@ import WhatsApp from '@mui/icons-material/WhatsApp';
 import Instagram from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import ServiceBreadcrumb from '../../common/ServiceBreadcrumb';
+import GoogleReview from '../ServiceComponents/GoogleReview';
 
 function ServiceDetail() {
 
@@ -56,6 +57,7 @@ function ServiceDetail() {
                     alt="event" width="100%" 
                     style={{borderRadius:'8px'}}
                     />
+                    <GoogleReview />
                 </div>
                 <div className='col-md-1'></div>
                 <div className='col-md-6 text-justify'>

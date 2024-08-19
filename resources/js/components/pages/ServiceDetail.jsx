@@ -12,6 +12,7 @@ import Instagram from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import ServiceBreadcrumb from '../../common/ServiceBreadcrumb';
 import GoogleReview from '../ServiceComponents/GoogleReview';
+import OnPage from '../../common/OnPage';
 
 function ServiceDetail() {
 
@@ -47,13 +48,14 @@ function ServiceDetail() {
 
     return (
         <>
+        <OnPage meta_title = {subserviceData.meta_title} keywords = {subserviceData.keywords} meta_desc = {subserviceData.meta_description} />
         <PageBanner props = {Banner} />
         <ServiceBreadcrumb prev={subserviceData.service_slug} current={subserviceData.name} />
         <div className='container-fluid pt-5 pb-5'>
             <div className='container'>
             <div className='row'>
                 <div className='col-md-5 mb-4'>
-                    <img src={`https://filmcityinfo.com/public/images/services/${subserviceData.image}`} 
+                    <img src={`/public/images/services/${subserviceData.image}`} 
                     alt="event" width="100%" 
                     style={{borderRadius:'8px'}}
                     />
@@ -104,7 +106,7 @@ function ServiceDetail() {
                                 <>
                                 <div className='col-md-6'>
                                 <div className='related-service mb-4'>
-                                    <img src={`https://filmcityinfo.com/public/images/services/${service.image}`} 
+                                    <img src={`/public/images/services/${service.image}`} 
                                     alt="event" width="100%" 
                                     style={{borderRadius:'10px'}}
                                     />
@@ -139,7 +141,6 @@ function ServiceDetail() {
         </div>
 
         <FaqSection />
-        
         </>
     )
 }

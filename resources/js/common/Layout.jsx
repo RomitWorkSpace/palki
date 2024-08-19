@@ -22,6 +22,7 @@ function Layout() {
         <Route path="/about" exact element={<About />} />
         <Route path="/contact" exact element={<Contact />} />
         <Route path="/blog" exact element={<Blog />} />
+        <Route path="/blog/:slug" exact element={<BlogDetail />} />
         <Route path="/training-development" exact element={<Training />} />
         <Route path="/blog-detail" exact element={<BlogDetail /> } />
         <Route path="/services" exact element={<Service />} />

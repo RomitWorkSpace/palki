@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 
 import Divider from 'imgPath/divider.png'
 import Breadcrumb from '../../common/Breadcrumb'
+import OnPage from '../../common/OnPage'
 
 function Service() {
 
@@ -46,7 +47,7 @@ function Service() {
                     </div>
                     <div className='col-md-1'></div>
                     <div className='col-md-5 mb-4'>
-                        <img src={`https://filmcityinfo.com/public/images/services/${item.image}`} alt="event" width="100%" style={{borderRadius:'10px'}} />
+                        <img src={`/public/images/services/${item.image}`} alt="event" width="100%" style={{borderRadius:'10px'}} />
                     </div>
                 </div>
                 <div className='mt-4 mb-4 divider'>
@@ -57,7 +58,7 @@ function Service() {
              <div key={item.id} className='container pt-5'>
                 <div className='row align-items-center'>
                     <div className='col-md-5 mb-4'>
-                        <img src={`https://filmcityinfo.com/public/images/services/${item.image}`} alt="event" width="100%" style={{borderRadius:'10px'}} />
+                        <img src={`/public/images/services/${item.image}`} alt="event" width="100%" style={{borderRadius:'10px'}} />
                     </div>
                     <div className='col-md-1'></div>
                     <div className='col-md-6 text-center'>
@@ -83,6 +84,10 @@ function Service() {
     const Banners = {mobile_banner : mbanner, desktop_banner : dbanner}
     return (
         <>
+        <OnPage meta_title="Our Services - Palki Food Services"
+        keywords = "Palki Food Services, Industrial Cafeteria Meals,Corporate Cafeteria Meals, Bulk Bakery Supplies, Corporate Supplies, Catering for Social Ceremonies, Catering for Large Corporate"
+        meta_desc = "Explore Palki Foods' services: From bespoke catering and bulk bakery supplies to corporate and industrial cafeteria solutions. Quality and excellence guaranteed."
+        />
         <PageBanner props = {Banners}/>
         <Breadcrumb page='Services' />
         <div className='container-fluid pt-5 pb-5'>

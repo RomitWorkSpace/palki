@@ -7,7 +7,7 @@ function SubServiceMenu({ props, handleNavbar }){
     
     useEffect(() => {
 
-        axios.get(`https://filmcityinfo.com/api/subservices/${props}`).then(res=>{
+        axios.get(`https://palkifoods.in/api/subservices/${props}`).then(res=>{
             if(res.status === 200)
             {
                 setSubMenu(res.data.subservices)

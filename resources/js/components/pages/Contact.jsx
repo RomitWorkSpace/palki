@@ -8,6 +8,7 @@ import PageBanner from '../../common/PageBanner'
 import mbanner from 'imgPath/banners/Contact-banner-mb.jpg'
 import dbanner from 'imgPath/banners/Contact-banner.jpg'
 import Breadcrumb from '../../common/Breadcrumb';
+import OnPage from '../../common/OnPage';
 
 function Contact() {
 
@@ -31,6 +32,10 @@ function Contact() {
     const Banners = {mobile_banner : mbanner, desktop_banner : dbanner}
     return (
         <>
+        <OnPage meta_title="Contact Us| Palki Food Services - Food Service Company"
+        keywords = "Contact Palki Food Services, Palki Foods customer support, Palki Food Services contact details, Reach out to Palki Foods, Palki Foods contact information"
+        meta_desc = "Contact For Our Food Services at 8860619770/71 or at our locations Plot no. 228 Udhyog Kendra 1st Ecotech 3, Extension, Noida."
+        />
         <PageBanner props = {Banners} />
         <Breadcrumb page='Contact' />
         <div className='contact-section pt-5 pb-5' style={{backgroundImage: `url(${ContactBg})`}}>

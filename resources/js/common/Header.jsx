@@ -18,7 +18,7 @@ const Header = () => {
 
     const fetchData = async () => {
       try {
-        const response = await fetch('https://filmcityinfo.com/api/services');
+        const response = await fetch('https://palkifoods.in/api/services');
         const data = await response.json();
         setDropdownData(data.services);
       } catch (error) {
@@ -33,7 +33,7 @@ const Header = () => {
 
     const fetchServiceData = async () => {
       try {
-        const response = await fetch('https://filmcityinfo.com/api/services');
+        const response = await fetch('https://palkifoods.in/api/services');
         const data = await response.json();
         setServiceData(data.services);
       } catch (error) {

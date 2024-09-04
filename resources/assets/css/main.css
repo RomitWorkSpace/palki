@@ -12,9 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --font-default: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Poppins", sans-serif;
-  --font-secondary: "Poppins", sans-serif;
+  --font-default: "Raleway", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Raleway", sans-serif; /* Poppins */
+  --font-secondary: "Raleway", sans-serif;
 }
 
 /* Colors */
@@ -37,6 +37,10 @@ body {
   color: var(--color-default);
 }
 
+p{
+  font-size:15px;
+}
+
 a {
   color: var(--color-primary);
   text-decoration: none;
@@ -52,7 +56,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+ul li {
   font-family: var(--font-primary);
 }
 
@@ -333,8 +338,8 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-family: Nunito;
-    font-size: 14px;
+    font-family: Raleway;
+    font-size: 16px;
     font-weight: 700;
     color: #212529;
     white-space: nowrap;
@@ -430,13 +435,13 @@ section {
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
+  /* .navbar .dropdown .dropdown ul {
     left: -90%;
   }
 
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
-  }
+  } */
 }
 
 @media (min-width: 1280px) {
@@ -1804,9 +1809,10 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background-color: #fff8f6;
   padding-top: 50px;
-  color: #44566c;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .footer .footer-info .logo {
@@ -1815,7 +1821,7 @@ section {
 }
 
 .footer .footer-info .logo img {
-  max-height: 80px;
+  max-height: 95px;
   margin-right: 6px;
 }
 
@@ -1830,7 +1836,7 @@ section {
 .footer .footer-info p {
   font-size: 16px;
   line-height: 1.5;
-  font-family: Nunito;
+  font-family: Raleway;
 }
 
 .footer .social-links a {
@@ -1872,7 +1878,7 @@ section {
 
 .footer .footer-links ul i {
   padding-right: 2px;
-  color: rgba(13, 66, 255, 0.8);
+  color: #cd3131;
   font-size: 12px;
   line-height: 0;
 }
@@ -1888,11 +1894,11 @@ section {
 }
 
 .footer .footer-links ul a {
-  color: #44566c;
+  color: #111;
   transition: 0.3s;
   display: inline-block;
   line-height: 1.5;
-  font-family: Nunito;
+  font-family: Raleway;
   font-size: 16px;
 }
 
